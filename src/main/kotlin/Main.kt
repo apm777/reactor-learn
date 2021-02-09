@@ -54,6 +54,7 @@ fun main() {
 //    val zoneOffset = OffsetDateTime.now(ZoneId.systemDefault()).offset
 //    val ldt = d.atZone(zoneOffset)
 
-//    println(d)
-//    println(ds)
+//    println("Instant - $d")
+//    println("Миллисекунды строка - $ds")
+
 }
