@@ -1,6 +1,6 @@
 //import reactor.core.publisher.BaseSubscriber
-//import reactor.core.publisher.Flux
-import java.time.Instant
+import reactor.core.publisher.Flux
+//import java.time.Instant
 //import java.time.OffsetDateTime
 //import java.time.ZoneId
 
@@ -43,16 +43,18 @@ fun main() {
 //    )
 
 //    Создание SampleSubscriber на основе BaseSubscriber и определение собственных hook
-//    val ss = SampleSubscriber<Int>()
-//    val ints = Flux.range(1, 5)
-//    ints.subscribe(ss)
+    val ss = SampleSubscriber<Int>()
+    val ints = Flux.range(1, 5)
+    ints.subscribe(ss)
 
-    val d = Instant.now()
-    val ds = d.toEpochMilli().toString()
+//    Проверка Instant и перевод в миллисекунды
+//    val d = Instant.now()
+//    val ds = d.toEpochMilli().toString()
 
 //    val zoneOffset = OffsetDateTime.now(ZoneId.systemDefault()).offset
 //    val ldt = d.atZone(zoneOffset)
 
-    println("Instant - $d")
-    println("Миллисекунды строка - $ds")
+//    println("Instant - $d")
+//    println("Миллисекунды строка - $ds")
+
 }
